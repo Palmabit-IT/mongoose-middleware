@@ -1,6 +1,6 @@
 # Mongoose Middleware
 
-Fork of PlayNetwork/mongoose-middleware
+Fork of https://github.com/PlayNetwork/mongoose-middleware
 
 ##Pagination
 pass parameter in options

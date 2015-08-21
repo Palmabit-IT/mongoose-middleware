@@ -90,8 +90,8 @@ var options = {
 		desc : 'birthday',
 		asc : 'name'
 	},
-	start : 0,
-	count : 500
+	page : 1,
+	limit : 500
 };
 
 KittehModel
@@ -118,7 +118,7 @@ The options submitted to the `page(options, callback)` middleware method are ech
 ```Javascript
 {
 	options : {
-		count : 500,
+		limit : 500,
 		filters : {
 			field : ['name', 'home', 'features.color'],
 			mandatory : {
@@ -139,7 +139,7 @@ The options submitted to the `page(options, callback)` middleware method are ech
 			desc : 'birthday',
 			asc : 'name'
 		},
-		start : 0
+		page : 1
 	},
 	results : [ ... ], // the first 500 brindled, black or white kittehs named Hamish in Seattle
 	total : 734
@@ -331,8 +331,8 @@ Pagination is performed by swapping the `exec()` function of Mongoose with `page
 
 ```Javascript
 var options = {
-	start : 0,
-	count : 100
+	page : 1, //default is 1
+	limit : 1 // default is 10
 };
 
 KittehModel
@@ -352,8 +352,8 @@ var
 require('mongoose-middleware').initialize({ maxDocs : 50 }, mongoose);
 
 var options = {
-	start : 0,
-	count : 100
+	page : 1,
+	limit : 100
 };
 
 KittehModel
@@ -367,13 +367,13 @@ KittehModel
 
 #### Response
 
-Pagination returns the specified start, count and overall total numer of matching documents as a wrapper to the results from Mongo.
+Pagination returns the specified page, count and overall total numer of matching documents as a wrapper to the results from Mongo.
 
 ```Javascript
 {
 	options : {
-		count : 50,
-		start : 0
+		limit : 50,
+		page : 1
 	},
 	results : [ ... ],
 	total : 734

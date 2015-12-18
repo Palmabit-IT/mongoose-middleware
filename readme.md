@@ -5,7 +5,7 @@ Fork of https://github.com/PlayNetwork/mongoose-middleware
 # Installation
 
 ```
-npm install --save mongoose-tenant
+npm install --save pb-mongoose-middleware
 ```
 
 

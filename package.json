@@ -22,7 +22,8 @@
     "mongo",
     "mongoose",
     "mongoose middlware",
-    "mongoose-middleware"
+    "mongoose-middleware",
+    "pb-mongoose-middleware"
   ],
   "repository": {
     "type": "git",

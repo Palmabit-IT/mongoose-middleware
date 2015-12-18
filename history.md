@@ -1,3 +1,8 @@
+# 0.3.0 / 2015-12-28
+
+* Add passing parameters in the options object like page and options
+* FORK from and PlayNetwork/mongoose-middleware
+
 # 0.2.12 / 2014-04-28
 
 * Fixing a bug with the sanitization of values prior to creating a regex match

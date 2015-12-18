@@ -2,10 +2,25 @@
 
 Fork of https://github.com/PlayNetwork/mongoose-middleware
 
-##Pagination
-pass parameter in options
+# Installation
+
+```
+npm install --save mongoose-tenant
+```
+
+
+
+## Pagination
+
+Pass parameter in options
+
 ```
 {
 	page:2,		// deafult 1
 	limit:200	// default 10
 }
+```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.

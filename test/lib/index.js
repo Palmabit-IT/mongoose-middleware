@@ -95,7 +95,7 @@ describe('index', function () {
 			.page(null, function (err, data) {
 				should.not.exist(err);
 				should.exist(data);
-				data.options.count.should.equals(1000);
+				data.options.limit.should.equals(1000);
 
 				return done();
 			});

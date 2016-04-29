@@ -169,7 +169,7 @@ describe('page', function () {
 				should.not.exist(err);
 				should.exist(data);
 
-				data.options.count.should.equals(50);
+				data.options.limit.should.equals(50);
 
 				return done();
 			});

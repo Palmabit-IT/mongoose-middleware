@@ -1,7 +1,7 @@
 {
   "name": "pb-mongoose-middleware",
   "description": "Middleware for mongoose that makes filtering, sorting, pagination and projection chainable and simple to apply",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "scripts": {
     "test": "gulp test-all"
   },
